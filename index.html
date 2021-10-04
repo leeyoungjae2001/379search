@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>379당직 도움이</title>
+    <style>
+        :root{
+            --main-background-color: #54494B;
+            --nav-backgound-color: #97878A;
+        }
+        body{
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            background: var(--main-background-color);
+            overflow-y: auto;
+        }
+        section.section_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 5%;
+            background: var(--nav-backgound-color);
+            padding: 2rem;
+            border-radius: 1rem;
+        }
+        .section_box_header{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .section_box_input{
+            height: 2rem;
+            border-radius: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        .section_box_table{
+            text-align: center;
+        }
+        .section_box_table>thead>tr>th{
+            padding: 0.5rem 1.5rem;
+            font-weight: bold;
+            font-size: large;
+        }
+    </style>
+    <script>
+        var car_data = [
+            {number: 1096, rank: "", name: "", class: "219지원대"},
+            {number: 2001, rank: "", name: "", class: "지원과"},
+            {number: 2084, rank: "", name: "", class: "지원과"},
+        ]
+        var car_search = function (){
+            
+        }
+    </script>
+</head>
+<body>
+    <section id="car_number_box" class="section_box">
+        <header id="car_number_box_header" class="section_box_header">차량번호 검색</header>
+        <input type="text" name="" id="car_number_box_search" class="section_box_input">
+        <div class="container">
+            <table id="car_number_box_table" class="section_box_table">
+              <thead>
+                <tr>
+                  <th>차량번호</th>
+                  <th>계급</th>
+                  <th>성명</th>
+                  <th>분류</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2001</td>
+                  <td></td>
+                  <td></td>
+                  <td>본부 지원과</td>
+                </tr>
+                <tr>
+                  <td>2001</td>
+                  <td></td>
+                  <td></td>
+                  <td>본부 지원과</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </section>
+</body>
+</html>
